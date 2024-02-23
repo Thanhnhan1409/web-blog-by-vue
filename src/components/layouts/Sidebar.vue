@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar-container">
-        dddd
+        <img src="../../assets/images/Panda_logo.png" alt="" width="100">
     </div>
 </template>
 <style scoped>

@@ -6,6 +6,7 @@ import "element-plus/dist/index.css";
 import Header from "./components/layouts/Header.vue";
 import Sidebar from "./components/layouts/Sidebar.vue";
 import PostDetail from "./components/posts/PostDetail.vue";
+import CommentDetail from "./components/posts/comments/commentDetail.vue";
 import App from "./App.vue";
 
 const initApp = async () => {
@@ -14,6 +15,7 @@ const initApp = async () => {
     app.component("header-component", Header);
     app.component("sidebar-component", Sidebar);
     app.component("post-detail", PostDetail);
+    app.component("comment-detail", CommentDetail);
     router.isReady().then(() => {
         app.mount("#app");
     });
