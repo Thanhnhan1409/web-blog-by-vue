@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-    // {
-    //     path: '/',
-    //     name: 'dashboard',
-    //     meta: { layout: 'empty' },
-    //     component: () => import('@/views/Dashboard.vue'),
-    // },
-    // {
-    //     path: '/login',
-    //     name: 'login',
-    //     meta: { layout: 'empty' },
-    //     component: () => import('@/views/auth/LoginPage.vue'),
-    // },
+    {
+        path: '/',
+        name: 'posts',
+        meta: { layout: 'auth' },
+        component: () => import('../views/posts/index.vue')
+    },
+    {
+        path: '/login',
+        name: 'login',
+        meta: { layout: 'empty' },
+        component: () => import('../views/auth/loginPage.vue'),
+    },
     // {
     //     path: '/register',
     //     name: 'register',
