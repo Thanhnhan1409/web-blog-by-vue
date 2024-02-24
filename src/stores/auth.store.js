@@ -9,7 +9,7 @@ export const authStore = defineStore('auth', {
         async initAuthStore() {
             if (localStorage.getItem('access_token')) {
                 // const res = await getInfo();
-                // console.log('adasdsadsad', res.data);
+                console.log('adasdsadsad');
                 // this.user = res.data;
                 this.isLoggedIn = true;
                 // console.log('initAuthStore', this.$state);
