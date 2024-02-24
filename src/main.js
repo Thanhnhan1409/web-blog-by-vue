@@ -7,6 +7,7 @@ import Header from "./components/layouts/Header.vue";
 import Sidebar from "./components/layouts/Sidebar.vue";
 import PostDetail from "./components/posts/PostDetail.vue";
 import CommentDetail from "./components/posts/comments/commentDetail.vue";
+import UserInformation from './components/user/UserInformation.vue'
 import authLayout from './layouts/authLayout.vue'
 import emptyLayout from './layouts/emptyLayout.vue'
 import App from "./App.vue";
@@ -20,6 +21,7 @@ const initApp = async () => {
     app.component("sidebar-component", Sidebar);
     app.component("post-detail", PostDetail);
     app.component("comment-detail", CommentDetail);
+    app.component("user-information", UserInformation);
     router.isReady().then(() => {
         app.mount("#app");
     });

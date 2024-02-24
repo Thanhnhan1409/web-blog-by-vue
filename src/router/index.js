@@ -13,12 +13,18 @@ const routes = [
         meta: { layout: 'empty' },
         component: () => import('../views/auth/loginPage.vue'),
     },
-    // {
-    //     path: '/register',
-    //     name: 'register',
-    //     meta: { layout: 'empty' },
-    //     component: () => import('@/views/auth/RegisterPage.vue'),
-    // },
+    {
+        path: '/register',
+        name: 'register',
+        meta: { layout: 'empty' },
+        component: () => import('../views/auth/registerPage.vue'),
+    },
+    {
+        path: '/information/:id',
+        name: 'information',
+        meta: { layout: 'auth' },
+        component: () => import('../views/user/index.vue'),
+    },
     
 ]
 const router = createRouter({
