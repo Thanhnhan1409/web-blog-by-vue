@@ -8,6 +8,18 @@ const routes = [
         component: () => import('../views/posts/index.vue')
     },
     {
+        path: '/my-posts',
+        name: 'my posts',
+        meta: { layout: 'auth' },
+        component: () => import('../views/posts/myPost.vue')
+    },
+    {
+        path: '/my-favorite-posts',
+        name: 'favorite posts',
+        meta: { layout: 'auth' },
+        component: () => import('../views/posts/favoritePosts.vue')
+    },
+    {
         path: '/login',
         name: 'login',
         meta: { layout: 'empty' },
